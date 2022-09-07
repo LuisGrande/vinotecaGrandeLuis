@@ -1,0 +1,24 @@
+.secc3 { 
+    grid-area: secc3; 
+    background-color: $colorOscuro;
+    
+    h3{
+        font-family: $letraPrincipal;
+        @extend %estiloParrafo;
+        text-transform: capitalize;
+        @include estiloLetra($colorSuave,27px);
+    }
+    &__productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: auto;
+        flex-grow: 1;
+        gap: 5px;
+        img{
+            flex-grow: 1fr;
+            width: 250px;
+        }
+    }
+}

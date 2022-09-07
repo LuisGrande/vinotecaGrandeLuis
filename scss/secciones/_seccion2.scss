@@ -1,0 +1,34 @@
+.secc2 { 
+    grid-area: secc2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__parrafo{
+        width: 70%;
+        @extend %estiloParrafo;
+        h2{
+            font-family: $letraPrincipal;
+            text-transform: capitalize;
+            @include estiloLetra($colorOscuro,25px);
+        }
+        p{
+            font-family: $letraSecundaria;
+            @include estiloLetra($colorMedio,17px);
+            
+        }
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        
+        text-align: center;
+        img{
+            width: 180px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    
+
+}

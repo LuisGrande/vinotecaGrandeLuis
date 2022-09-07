@@ -1,0 +1,4 @@
+1 - Agregue keywords en la pagina principal las palabras vinos, vinoteca, bebidas, alcoholicas
+2 - Agregue una pequeña descripcion de la pagina
+3 - optimice los tamaños de las imagenes
+4 - la pagina cuenta con el respectivo titulo

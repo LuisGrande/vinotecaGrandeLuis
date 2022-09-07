@@ -1,0 +1,13 @@
+%estiloParrafo{
+    text-align: center;
+    font-family: $letraSecundaria;
+
+}
+
+// mixin
+
+@mixin estiloLetra($color,$tamanio){
+    color: $color;
+    font-size: $tamanio;
+
+}

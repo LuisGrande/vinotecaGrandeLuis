@@ -1,6 +1,120 @@
-header {
-  color: red;
-  background-color: black; }
-  header h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px; }
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Josefin+Sans:wght@100;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.secc2__parrafo, .secc3 h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif; }
+
+.vinoteca {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto auto auto 60px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "secc1" "secc2" "secc3" "footer"; }
+
+.header {
+  grid-area: header;
+  background-color: #0b2027;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly; }
+  .header__logo {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #cfd7c7;
+    margin: 3px; }
+    .header__logo img {
+      width: 50px;
+      color: #cfd7c7; }
+  .header__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; }
+    .header__ul--li {
+      margin: 0 15px; }
+      .header__ul--li a {
+        text-decoration: none;
+        color: #cfd7c7;
+        font-family: "Combo", cursive;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out; }
+      .header__ul--li a:hover {
+        color: #40798c; }
+
+.secc1 {
+  grid-area: secc1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .secc1 h1 {
+    color: #0b2027;
+    font-family: "Combo", cursive;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center; }
+  .secc1 img {
+    width: 170px; }
+
+.secc2 {
+  grid-area: secc2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .secc2__parrafo {
+    width: 70%; }
+    .secc2__parrafo h2 {
+      font-family: "Combo", cursive;
+      text-transform: capitalize;
+      color: #0b2027;
+      font-size: 25px; }
+    .secc2__parrafo p {
+      font-family: "Josefin Sans", sans-serif;
+      color: #40798c;
+      font-size: 17px; }
+  .secc2__img {
+    width: 100%;
+    height: auto;
+    text-align: center; }
+    .secc2__img img {
+      width: 180px;
+      border-radius: 50%;
+      padding: 5px; }
+
+.secc3 {
+  grid-area: secc3;
+  background-color: #0b2027; }
+  .secc3 h3 {
+    font-family: "Combo", cursive;
+    text-transform: capitalize;
+    color: #cfd7c7;
+    font-size: 27px; }
+  .secc3__productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    gap: 5px; }
+    .secc3__productos img {
+      flex-grow: 1fr;
+      width: 250px; }
+
+.footer {
+  grid-area: footer;
+  background-color: #40798c; }

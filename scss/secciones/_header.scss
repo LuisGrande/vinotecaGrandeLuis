@@ -1,0 +1,49 @@
+
+
+.header{
+    grid-area: header;
+    background-color: $colorOscuro;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__nav{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    &__logo{
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $colorSuave;
+        margin: 3px;
+        img{
+            width: 50px;
+            color: $colorSuave;
+        }
+    }
+    &__ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        &--li{
+            margin:0 15px;
+            a{
+                text-decoration: none;
+                color: $colorSuave;
+                font-family: $letraPrincipal;
+                text-transform: uppercase;
+                transition: all .3s ease-in-out;
+            }
+            a:hover{
+                color: $colorMedio;
+            }
+        }
+    }
+    
+}
