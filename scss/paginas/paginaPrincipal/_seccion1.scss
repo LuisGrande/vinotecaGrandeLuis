@@ -1,15 +1,33 @@
+// $breakpoints: (
+//     sm: 540px,
+//     md: 768px,
+//     lg: 1024px
+// );
+
+// @mixin mediaQuery($point){
+//     @media screen and (min-width: map-get($breakpoints, $point)) {
+//         @content;
+//     }
+// }
+
 .secc1{
     grid-area: secc1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include mediaQuery(md){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     h1{
         color: $colorOscuro;
         font-family: $letraPrincipal;
         font-weight: 900;
         font-size: 40px;
         text-align: center;
+      
     }
     img{
         width: 170px;

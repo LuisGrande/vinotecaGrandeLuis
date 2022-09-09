@@ -39,10 +39,11 @@
                 font-family: $letraPrincipal;
                 text-transform: uppercase;
                 transition: all .3s ease-in-out;
+                &:hover{
+                    color: $colorMedio;
+                }
             }
-            a:hover{
-                color: $colorMedio;
-            }
+          
         }
     }
     

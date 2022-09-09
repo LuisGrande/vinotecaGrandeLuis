@@ -2,16 +2,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
-.secc2__parrafo, .secc3 h3 {
+.secc2__parrafo, .secc3 h3, .contact, .footer {
   text-align: center;
   font-family: "Josefin Sans", sans-serif; }
 
 .vinoteca {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px auto auto auto 60px;
+  grid-template-rows: 60px auto auto auto 80px;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   grid-template-areas: "header" "secc1" "secc2" "secc3" "footer"; }
@@ -51,8 +52,8 @@
         font-family: "Combo", cursive;
         text-transform: uppercase;
         transition: all .3s ease-in-out; }
-      .header__ul--li a:hover {
-        color: #40798c; }
+        .header__ul--li a:hover {
+          color: #40798c; }
 
 .secc1 {
   grid-area: secc1;
@@ -60,6 +61,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 768px) {
+    .secc1 {
+      flex-direction: row;
+      justify-content: space-around; } }
   .secc1 h1 {
     color: #0b2027;
     font-family: "Combo", cursive;
@@ -115,6 +120,49 @@
       flex-grow: 1fr;
       width: 250px; }
 
+.contact {
+  background-image: linear-gradient(to bottom, rgba(11, 33, 40, 0.466), rgba(64, 121, 140, 0.548), rgba(207, 215, 198, 0.5)), url(../../../img/fondoContacto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #0b2027;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center; }
+  .contact h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Combo", cursive; }
+  @media screen and (min-width: 540px) {
+    .contact {
+      flex-direction: row; } }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; }
+    .contact__form .contact__campo {
+      width: 100%;
+      max-width: 400px;
+      margin: 5px 0;
+      text-align: center;
+      border-radius: 6px;
+      padding: 7px; }
+    .contact__form textarea {
+      resize: none; }
+
 .footer {
   grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #40798c; }
+  .footer small {
+    font-size: 10px; }
+  .footer h5 {
+    padding: 10px; }
