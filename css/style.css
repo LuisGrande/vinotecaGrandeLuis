@@ -152,9 +152,21 @@
       margin: 5px 0;
       text-align: center;
       border-radius: 6px;
-      padding: 7px; }
+      padding: 7px;
+      border-bottom: 3px inset solid #40798c;
+      border-left: 3px inset solid #40798c; }
     .contact__form textarea {
       resize: none; }
+    .contact__form .boton {
+      padding: 9px 20px;
+      color: #cfd7c7;
+      background-color: #0b2027;
+      border: none;
+      border-radius: 8px;
+      transition: all .2s ease-in-out;
+      cursor: pointer; }
+      .contact__form .boton:hover {
+        background-color: #40798c; }
 
 .footer {
   grid-area: footer;
